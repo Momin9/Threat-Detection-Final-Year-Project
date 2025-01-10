@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <h1 class="text-center"><i class="fas fa-shield-alt icon"></i> Comprehensive Overview of the Threat Detection System</h1>
+
+    <section>
+        <h2>1. Introduction</h2>
+        <p>
+            The Threat Detection System is a groundbreaking innovation in cybersecurity, designed to tackle the increasing complexity of cyber threats. By leveraging
+            cutting-edge machine learning algorithms and real-time analytics, this system offers a robust shield for digital environments, enabling organizations to
+            proactively address vulnerabilities and mitigate risks.
+        </p>
+        <p>
+            From identifying SQL injections to countering cross-site scripting and command injection attacks, the Threat Detection System employs advanced methods to
+            detect, prevent, and neutralize potential threats. This document provides a detailed exploration of its features, architecture, and implementation strategies,
+            underscoring its role in safeguarding digital assets.
+        </p>
+    </section>
+
+    <section>
+        <h2>2. Key Objectives</h2>
+        <p>The primary objectives of the Threat Detection System include:</p>
+        <ul>
+            <li><i class="fas fa-check-circle"></i> <strong>Real-time Detection:</strong> Instantly identify and block malicious activities.</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Enhanced Accuracy:</strong> Utilize machine learning for precise classification of threats.</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Comprehensive Logging:</strong> Maintain detailed audit logs for transparency and analysis.</li>
+            <li><i class="fas fa-check-circle"></i> <strong>Seamless Integration:</strong> Ensure smooth adoption within existing infrastructures.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>3. Threat Categories</h2>
+        <p>The system is capable of identifying a wide range of cyber threats, including:</p>
+        <ul>
+            <li><i class="fas fa-bug"></i> <strong>SQL Injections:</strong> Exploitation of SQL queries to access or manipulate data.</li>
+            <li><i class="fas fa-code"></i> <strong>Cross-Site Scripting (XSS):</strong> Embedding malicious scripts into web applications.</li>
+            <li><i class="fas fa-terminal"></i> <strong>Command Injections:</strong> Executing unauthorized commands on a server.</li>
+            <li><i class="fas fa-folder-open"></i> <strong>Path Traversal:</strong> Accessing restricted directories and files.</li>
+            <li><i class="fas fa-link"></i> <strong>Malicious URLs:</strong> Deceptive links aimed at compromising user security.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>4. System Architecture</h2>
+        <p>The architecture of the Threat Detection System is modular and scalable, comprising:</p>
+        <ul>
+            <li><strong>Machine Learning Engine:</strong> Analyzes data patterns to detect malicious activity.</li>
+            <li><strong>Middleware:</strong> Intercepts and evaluates incoming traffic.</li>
+            <li><strong>Alert Mechanism:</strong> Notifies administrators of detected threats in real-time.</li>
+            <li><strong>Log Management:</strong> Maintains comprehensive records for audits and forensic analysis.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>5. Dataset and Training</h2>
+        <p>The system is trained on a dataset of over 50,000 labeled examples across various threat types:</p>
+        <div class="table-container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Threat Type</th>
+                        <th>Samples</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SQL Injection</td>
+                        <td>8,000</td>
+                        <td>Unauthorized data access through SQL queries.</td>
+                    </tr>
+                    <tr>
+                        <td>Cross-Site Scripting (XSS)</td>
+                        <td>8,000</td>
+                        <td>Injection of harmful scripts into web pages.</td>
+                    </tr>
+                    <tr>
+                        <td>Command Injection</td>
+                        <td>8,000</td>
+                        <td>Executing unauthorized server commands.</td>
+                    </tr>
+                    <tr>
+                        <td>Path Traversal</td>
+                        <td>8,000</td>
+                        <td>Accessing restricted directories and files.</td>
+                    </tr>
+                    <tr>
+                        <td>Malicious URLs</td>
+                        <td>8,000</td>
+                        <td>URLs designed to exploit system vulnerabilities.</td>
+                    </tr>
+                    <tr>
+                        <td>Safe Requests</td>
+                        <td>10,000</td>
+                        <td>Benign requests used as control samples.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <h2>6. Results and Metrics</h2>
+        <p>The Threat Detection System demonstrates the following performance metrics:</p>
+        <ul>
+            <li><strong>Accuracy:</strong> 94%</li>
+            <li><strong>Precision:</strong> 97%</li>
+            <li><strong>Recall:</strong> 91%</li>
+            <li><strong>F1 Score:</strong> 93%</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>7. Challenges and Resolutions</h2>
+        <p>During development, the following challenges were addressed:</p>
+        <ul>
+            <li>Balancing dataset diversity using advanced augmentation techniques.</li>
+            <li>Updating threat libraries to counteract evolving cyber threats.</li>
+            <li>Ensuring system scalability for high-traffic environments.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>8. Future Enhancements</h2>
+        <ul>
+            <li>Integrating with cloud-based threat intelligence platforms.</li>
+            <li>Enhancing visual analytics for administrators with advanced dashboards.</li>
+            <li>Expanding coverage to include phishing and ransomware detection.</li>
+        </ul>
+    </section>
+
+    <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S2666764924000316" class="btn">Learn More</a>
+</div>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Request Records</h2>
+<a href="{% url 'request_create' %}" class="btn btn-success">Create New Request</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>IP Address</th>
+            <th>Device Name</th>
+            <th>Browser</th>
+            <th>Location</th>
+            <th>ISP</th>
+            <th>Threat Detected</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for record in records %}
+        <tr>
+            <td>{{ record.ip_address }}</td>
+            <td>{{ record.device_name }}</td>
+            <td>{{ record.browser }}</td>
+            <td>{{ record.location }}</td>
+            <td>{{ record.isp }}</td>
+            <td>{{ record.threat_detected }}</td>
+            <td>
+                <a href="{% url 'request_update' record.pk %}" class="btn btn-warning btn-sm">Edit</a>
+                <a href="{% url 'request_delete' record.pk %}" class="btn btn-danger btn-sm">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

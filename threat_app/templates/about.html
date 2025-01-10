@@ -1,0 +1,344 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section style="
+    background-image: url('your-section-image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px 0;">
+</section>
+
+<!-- JavaScript for Smooth Scrolling -->
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute("href")).scrollIntoView({
+                    behavior: "smooth"
+                });
+            });
+        });
+    });
+</script>
+
+<!-- Discussion Section -->
+<section style="background-color: #1D1F47; padding: 50px 0;">
+    <div style="max-width: 600px; margin: 0 auto; text-align: center; color: #f5f5f5;">
+        <h2 style="font-size: 2rem; margin-bottom: 20px; font-family: 'Arial', sans-serif;">Have a Project to Discuss?</h2>
+        <p style="font-size: 1rem; margin-bottom: 30px; font-family: 'Arial', sans-serif;">
+            Don't hesitate, great things start with filling out this contact form!
+        </p>
+        <form action="#" method="post" style="background-color: #14558A; padding: 30px; border-radius: 10px;">
+            <div style="margin-bottom: 15px;">
+                <input type="text" name="name" placeholder="Name*" required
+                       style="width: 100%; padding: 10px; font-size: 1rem; border: none; border-radius: 5px;">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <input type="email" name="email" placeholder="E-mail*" required
+                       style="width: 100%; padding: 10px; font-size: 1rem; border: none; border-radius: 5px;">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <textarea name="message" placeholder="Type Your Message" rows="4"
+                          style="width: 100%; padding: 10px; font-size: 1rem; border: none; border-radius: 5px;"></textarea>
+            </div>
+            <button type="submit"
+                    style="width: 100%; padding: 10px; font-size: 1rem; color: #fff; background-color: #ffffff; border: none; border-radius: 5px; cursor: pointer; font-family: 'Arial', sans-serif;">
+                Request a Quote
+            </button>
+        </form>
+    </div>
+</section>
+
+<!-- Partners Section -->
+<section style="background-color: #1D1F47; padding: 50px 0;">
+    <div style="text-align: center; color: #f5f5f5;">
+        <h2 style="font-size: 2rem; margin-bottom: 20px; font-family: 'Arial', sans-serif;">Our Partners</h2>
+        <p style="font-size: 1rem; margin-bottom: 40px; font-family: 'Arial', sans-serif;">
+            Thanks to a wide network of contacts and partners, we can implement any project and provide you with the best results.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 20px;">
+            <div style="background-color: #14558A; padding: 20px; border-radius: 10px; text-align: center; width: 150px;">
+                <img src="https://i.ibb.co/jbrf8ds/poetic-logo.png" alt="Poetic" style="max-width: 100%; margin-bottom: 10px;">
+                <p style="color: #ffffff; font-size: 1rem;">Poetic</p>
+            </div>
+            <div style="background-color: #14558A; padding: 20px; border-radius: 10px; text-align: center; width: 150px;">
+                <img src="https://i.ibb.co/bPwdw6j/reksoft-logo.png" alt="Reksoft" style="max-width: 100%; margin-bottom: 10px;">
+                <p style="color: #ffffff; font-size: 1rem;">Reksoft</p>
+            </div>
+            <div style="background-color: #14558A; padding: 20px; border-radius: 10px; text-align: center; width: 150px;">
+                <img src="https://i.ibb.co/dJTYmtc/cabot-logo.png" alt="Cabot" style="max-width: 100%; margin-bottom: 10px;">
+                <p style="color: #ffffff; font-size: 1rem;">Cabot</p>
+            </div>
+            <div style="background-color: #14558A; padding: 20px; border-radius: 10px; text-align: center; width: 150px;">
+                <img src="https://i.ibb.co/vmhB4HT/eden-logo.png" alt="Eden" style="max-width: 100%; margin-bottom: 10px;">
+                <p style="color: #ffffff; font-size: 1rem;">Eden</p>
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center; margin-top: 30px;">
+        <a href="#faq-section" style="padding: 10px 20px; font-size: 1rem; color: #fff; background-color: #14558A; border: none; border-radius: 5px; text-decoration: none;">Learn More</a>
+    </div>
+</section>
+
+
+    <!-- Project Discuss Section -->
+<section style="background: linear-gradient(to right, #191970, #4B0082); padding: 80px 0; position: relative;">
+    <div style="max-width: 600px; margin: 0 auto; text-align: center; color: #f5f5f5; position: relative; z-index: 2;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 20px; font-family: 'Arial', sans-serif; color: #FFD700;">
+            Have a Project to Discuss?
+        </h2>
+        <p style="font-size: 1.2rem; margin-bottom: 30px; font-family: 'Arial', sans-serif;">
+            Don't hesitate, great things start with filling out this contact form!
+        </p>
+        <form action="#" method="post" style="background-color: rgba(75, 0, 130, 0.8); padding: 30px; border-radius: 15px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);">
+            <div style="margin-bottom: 15px;">
+                <input type="text" name="name" placeholder="Name*" required
+                       style="width: 100%; padding: 15px; font-size: 1rem; border: none; border-radius: 8px; outline: none; background-color: #fff; color: #4B0082;">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <input type="text" name="phone" placeholder="Phone number*" required
+                       style="width: 100%; padding: 15px; font-size: 1rem; border: none; border-radius: 8px; outline: none; background-color: #fff; color: #4B0082;">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <input type="email" name="email" placeholder="E-mail*" required
+                       style="width: 100%; padding: 15px; font-size: 1rem; border: none; border-radius: 8px; outline: none; background-color: #fff; color: #4B0082;">
+            </div>
+            <div style="margin-bottom: 15px;">
+                <textarea name="message" placeholder="Type Your Message" rows="5"
+                          style="width: 100%; padding: 15px; font-size: 1rem; border: none; border-radius: 8px; outline: none; background-color: #fff; color: #4B0082;"></textarea>
+            </div>
+            <button type="submit"
+                    style="width: 100%; padding: 15px; font-size: 1.2rem; color: #fff; background-color: #00fff7; border: none; border-radius: 8px; cursor: pointer; font-family: 'Arial', sans-serif; font-weight: bold;">
+                Request a Quote
+            </button>
+        </form>
+    </div>
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('jellyfish-background.png') no-repeat center center / cover; opacity: 0.2;"></div>
+</section>
+
+
+
+
+    <!-- Why Choose Us Section -->
+    <section style="background-color: #1D1F47; padding: 50px 0;">
+        <div style="text-align: center; color: #f5f5f5; max-width: 1200px; margin: 0 auto;">
+            <h2 style="font-size: 2rem; margin-bottom: 20px; font-family: 'Arial', sans-serif;">Why Choose Us</h2>
+            <p style="font-size: 1rem; margin-bottom: 40px; font-family: 'Arial', sans-serif;">
+                We turn technologies and design into a powerful tool to help you achieve the desired goals and stand out
+                from hundreds of alike companies.
+            </p>
+            <div style="display: flex; justify-content: space-between;">
+                <div style="background-color: #14558A; padding: 20px; border-radius: 10px; text-align: center; width: 22%;">
+                    <img src="https://i.ibb.co/hY70xdG/SEC0217-leadership-feat-slide1-900px.jpg" alt="Best Practices" style="width: 100%; margin-bottom: 10px; border-radius: 10%">
+                    <h3 style="color: #f5f5f5; font-size: 1.2rem; margin-bottom: 10px;">Best Practices</h3>
+                    <p style="color: #ffffff; font-size: 1rem;">We use all our vast experience in design to create only
+                        the best, effective projects.</p>
+                </div>
+                <div style="background-color: #14558A; padding: 20px; border-radius: 10px; text-align: center; width: 22%;">
+                    <img src="https://i.ibb.co/XW0j21J/creative-lightbulb-1.jpg" alt="Creative Approach" style="width: 100%; margin-bottom: 10px; border-radius: 10%">
+                    <h3 style="color: #f5f5f5; font-size: 1.2rem; margin-bottom: 10px;">Creative Approach</h3>
+                    <p style="color: #ffffff; font-size: 1rem;">Though we are a big agency, we still can improvise and
+                        offer crazy but cool ideas.</p>
+                </div>
+                <div style="background-color: #14558A; padding: 20px; border-radius: 10px; text-align: center; width: 22%;">
+                    <img src="https://i.ibb.co/Nj4WfrZ/tech-trends-2021-2-1.jpg" alt="Top Technologies" style="width: 100%; margin-bottom: 10px; border-radius: 10%">
+                    <h3 style="color: #f5f5f5; font-size: 1.2rem; margin-bottom: 10px;">Top Technologies</h3>
+                    <p style="color: #ffffff; font-size: 1rem;">We work with the most innovative program stacks and
+                        high-end technologies.</p>
+                </div>
+                <div style="background-color: #14558A; padding: 20px; border-radius: 10px; text-align: center; width: 22%;">
+                    <img src="https://i.ibb.co/jfKThtB/blog-cyber-security-1024x538.jpg" alt="Full-service" style="width: 100%; margin-bottom: 10px; border-radius: 10%">
+                    <h3 style="color: #f5f5f5; font-size: 1.2rem; margin-bottom: 10px;">Full-service</h3>
+                    <p style="color: #ffffff; font-size: 1rem;">We have everything you may need, in one place, at a
+                        reasonable price.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Our Team Section -->
+    <section style="background-color: #1D1F47; padding: 50px 0;">
+        <div style="text-align: center; color: #f5f5f5; max-width: 1200px; margin: 0 auto;">
+            <h2 style="font-size: 2rem; margin-bottom: 20px; font-family: 'Arial', sans-serif;">Our Team</h2>
+            <p style="font-size: 1rem; margin-bottom: 40px; font-family: 'Arial', sans-serif;">
+                Our specialists are our pride. These people create stunning design and come up with crazy ideas.
+            </p>
+            <div style="display: flex; justify-content: space-between;">
+                <div style="width: 30%; text-align: center;">
+                    <img src="https://i.ibb.co/0hBWfwZ/momin-ali.jpg" alt="Momin Ali"
+                         style="width: 30%; border-radius: 10px; margin-bottom: 15px;">
+                    <h3 style="color: #f5f5f5; font-size: 1.2rem; margin-bottom: 5px;">Momin Ali</h3>
+                    <p style="color: #ffffff; font-size: 1rem;">Python Web & AI Developer<br> 3 years of experience</p>
+                    <div style="margin-top: 10px;">
+                        <a href="https://www.linkedin.com/in/momin-ali-6ab133228/"
+                           style="margin-right: 10px; color: #f5f5f5; text-decoration: none; font-size: 1.2rem;">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.facebook.com/sultansikndersher.al"
+                           style="margin-right: 10px; color: #f5f5f5; text-decoration: none; font-size: 1.2rem;">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://www.instagram.com/momin_ali5/" style="color: #f5f5f5; text-decoration: none; font-size: 1.2rem;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <p style="color: #ffffff; font-size: 1rem; margin-top: 10px;">mominalikhoker589@gmail.com</p>
+                </div>
+                <div style="width: 30%; text-align: center;">
+                    <img src="https://i.ibb.co/txVb3Zg/592afe20-7caa-4ad4-84ea-849f7f1845b0.jpg" alt="Sikander Irshad"
+                         style="width: 30%; border-radius: 10px; margin-bottom: 15px;">
+                    <h3 style="color: #f5f5f5; font-size: 1.2rem; margin-bottom: 5px;">Sikander Irshad</h3>
+                    <p style="color: #ffffff; font-size: 1rem;">Data Analyst<br> 1 years of experience</p>
+                    <div style="margin-top: 10px;">
+                        <a href="#"
+                           style="margin-right: 10px; color: #f5f5f5; text-decoration: none; font-size: 1.2rem;">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#"
+                           style="margin-right: 10px; color: #f5f5f5; text-decoration: none; font-size: 1.2rem;">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" style="color: #f5f5f5; text-decoration: none; font-size: 1.2rem;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <p style="color: #ffffff; font-size: 1rem; margin-top: 10px;">sikandarirshad0@gmail.com</p>
+                </div>
+                <div style="width: 30%; text-align: center;">
+                    <img src="https://i.ibb.co/T0ktszG/8fe16395-9591-4ba2-9ad7-b35268a47092.jpg" alt="Noman Majeed"
+                         style="width: 30%; border-radius: 10px; margin-bottom: 15px;">
+                    <h3 style="color: #f5f5f5; font-size: 1.2rem; margin-bottom: 5px;">Noman Majeed</h3>
+                    <p style="color: #ffffff; font-size: 1rem;">Web Designer<br> 1 years of experience</p>
+                    <div style="margin-top: 10px;">
+                        <a href="#"
+                           style="margin-right: 10px; color: #f5f5f5; text-decoration: none; font-size: 1.2rem;">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#"
+                           style="margin-right: 10px; color: #f5f5f5; text-decoration: none; font-size: 1.2rem;">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" style="color: #f5f5f5; text-decoration: none; font-size: 1.2rem;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                    <p style="color: #ffffff; font-size: 1rem; margin-top: 10px;">mary.johnson@email.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FAQ Section -->
+<section id="faq-section" style="background-color: #1D1F47; padding: 50px 0;">
+    <div style="text-align: center; color: #f5f5f5; max-width: 1200px; margin: 0 auto;">
+        <h2 style="font-size: 2rem; margin-bottom: 20px; font-family: 'Arial', sans-serif;">FAQ</h2>
+        <p style="font-size: 1rem; margin-bottom: 40px; font-family: 'Arial', sans-serif;">
+            If you need help, we have a list of frequently asked questions and answers. This section can come in handy if you still have any doubts. Anyway, you can always contact us directly and ask anything.
+        </p>
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
+            <div style="color: #f5f5f5; text-align: left;">
+                <h3 style="font-size: 1.2rem; margin-bottom: 10px;">What cities do you have offices in?</h3>
+                <p style="font-size: 1rem;">Our headquarters is located in the heart of London. Also, we have offices in New York, San Francisco, Vienna, and Barcelona.</p>
+            </div>
+            <div style="color: #f5f5f5; text-align: left;">
+                <h3 style="font-size: 1.2rem; margin-bottom: 10px;">How can design help my company?</h3>
+                <p style="font-size: 1rem;">People perceive any information visually. Beautiful and catchy design will distinguish you from the competitors and allow you to speak with your audience.</p>
+            </div>
+            <div style="color: #f5f5f5; text-align: left;">
+                <h3 style="font-size: 1.2rem; margin-bottom: 10px;">What if I have an extraordinary task?</h3>
+                <p style="font-size: 1rem;">No offense, but most of our works are extraordinary. Just choose a basic pricing plan and contact our managers to discuss the issue.</p>
+            </div>
+            <div style="color: #f5f5f5; text-align: left;">
+                <h3 style="font-size: 1.2rem; margin-bottom: 10px;">Do you have expertise in my niche?</h3>
+                <p style="font-size: 1rem;">That depends on what your business is. We are well-experienced to deal with most industries. We have worked both with major enterprises and individuals.</p>
+            </div>
+            <div style="color: #f5f5f5; text-align: left;">
+                <h3 style="font-size: 1.2rem; margin-bottom: 10px;">Where can I see your works and meet former clients?</h3>
+                <p style="font-size: 1rem;">We have accounts on Behance and Dribble. Also, you can follow us on Twitter and Facebook to be the first to know about our recent projects and collaborations.</p>
+            </div>
+            <div style="color: #f5f5f5; text-align: left;">
+                <h3 style="font-size: 1.2rem; margin-bottom: 10px;">Can we meet in person in London?</h3>
+                <p style="font-size: 1rem;">Sure, we can have a meeting in any city where we have an office. Just call or write our managers and schedule a meeting. Don’t forget to specify the city!</p>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 30px;">
+            <a href="#contact-us" style="padding: 10px 20px; font-size: 1rem; color: #fff; background-color: #14558A; border: none; border-radius: 5px; text-decoration: none;">Contact Us</a>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Our Clients Say Section -->
+    <section style="background-color: #1D1F47; padding: 50px 0;">
+        <div style="text-align: center; color: #f5f5f5; max-width: 1200px; margin: 0 auto;">
+            <h2 style="font-size: 2rem; margin-bottom: 20px; font-family: 'Arial', sans-serif;">Our Clients Say About
+                Us</h2>
+            <p style="font-size: 1rem; margin-bottom: 40px; font-family: 'Arial', sans-serif;">
+                Our customer reviews speak for themselves. We are glad that we've worked with such progressive companies
+                and had a hand in their development.
+            </p>
+            <div style="display: flex; justify-content: space-between; gap: 20px;">
+                <div style="background-color: #14558A; padding: 20px; border-radius: 10px; text-align: center; width: 45%;">
+                    <p style="color: #ffffff; font-size: 1rem; margin-bottom: 20px;">
+                        Thanks to Space Agency, we were able to carry out a full rebranding. We changed literally
+                        everything, starting from the website. We really like our new corporate style, and it was highly
+                        appreciated by our customers.
+                    </p>
+                    <img src="ray-miley.jpg" alt="Ray Miley"
+                         style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 10px;">
+                    <p style="color: #ffffff; font-size: 1.1rem; font-weight: bold;">Ray Miley</p>
+                    <p style="color: #ffffff; font-size: 1rem;">CEO at MicroTok</p>
+                </div>
+                <div style="background-color: #14558A; padding: 20px; border-radius: 10px; text-align: center; width: 45%;">
+                    <p style="color: #ffffff; font-size: 1rem; margin-bottom: 20px;">
+                        We have a complex product, and when launching a startup, we decided to pay great attention to
+                        branding and design in the early stages. We did not fail by contacting these specialists. Design
+                        has played a huge role in our success.
+                    </p>
+                    <img src="gwen-stuart.jpg" alt="Gwen Stuart"
+                         style="width: 100px; height: 100px; border-radius: 50%; margin-bottom: 10px;">
+                    <p style="color: #ffffff; font-size: 1.1rem; font-weight: bold;">Gwen Stuart</p>
+                    <p style="color: #ffffff; font-size: 1rem;">CEO at Supra Technologies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+<section id="contact-us" style="background: linear-gradient(to bottom, #1D1F47, #14162E); padding: 60px 0; text-align: center;">
+    <div style="max-width: 800px; margin: 0 auto; color: #f5f5f5;">
+        <!-- Contact Information -->
+        <div style="font-family: 'Arial', sans-serif; margin-bottom: 40px;">
+            <h2 style="font-size: 2.5rem; margin-bottom: 20px; color: #FFD700;">Contact Us</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 30px; line-height: 1.8;">
+                Whether you have a project to discuss or a question, feel free to reach out to us. We’re here to help.
+            </p>
+        </div>
+
+        <!-- Contact Form -->
+        <div style="background-color: rgba(20, 21, 58, 0.9); padding: 40px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);">
+            <h2 style="text-align: center; font-size: 2rem; margin-bottom: 20px; color: #FFD700;">Get In Touch</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name*" required
+                    style="width: 100%; padding: 15px; margin-bottom: 15px; font-size: 1rem; border: none; border-radius: 8px; background-color: #1D1F47; color: #f5f5f5;">
+                <input type="email" name="email" placeholder="Your Email*" required
+                    style="width: 100%; padding: 15px; margin-bottom: 15px; font-size: 1rem; border: none; border-radius: 8px; background-color: #1D1F47; color: #f5f5f5;">
+                <input type="text" name="phone" placeholder="Phone Number*" required
+                    style="width: 100%; padding: 15px; margin-bottom: 15px; font-size: 1rem; border: none; border-radius: 8px; background-color: #1D1F47; color: #f5f5f5;">
+                <textarea name="message" placeholder="Your Message*" rows="5" required
+                    style="width: 100%; padding: 15px; margin-bottom: 20px; font-size: 1rem; border: none; border-radius: 8px; background-color: #1D1F47; color: #f5f5f5;"></textarea>
+                <button type="submit"
+                    style="width: 100%; padding: 15px; font-size: 1.2rem; color: #1D1F47; background-color: #FFD700; border: none; border-radius: 8px; font-weight: bold; cursor: pointer; transition: background-color 0.3s;">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

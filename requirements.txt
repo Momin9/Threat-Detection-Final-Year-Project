@@ -25,6 +25,8 @@ numpy
 pandas
 propcache
 PyJWT
+psycopg
+psycopg2-binary
 python-dateutil
 pytz
 PyYAML

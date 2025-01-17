@@ -7,6 +7,8 @@ cachetools
 certifi
 charset-normalizer
 Django
+django-environ
+dj-database-url
 django-cors-headers
 django-crispy-forms
 djangorestframework

@@ -36,12 +36,10 @@ def process_request(request):
     return render(request, 'dashboard.html')
 
 
-@login_required(login_url='login')
 def explore(request):
     return render(request, 'explore.html')
 
 
-@login_required(login_url='login')
 def about(request):
     return render(request, 'about.html')
 
